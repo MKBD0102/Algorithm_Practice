@@ -16,3 +16,14 @@ def solution(code):
                     ret += code[i]
             
     return ret if ret != '' else "EMPTY"
+
+'''
+# 1 제외 index 2step 반환
+ret = code.replace('1','')[::2]
+# mode_ for문
+for i in range(code.count('1')):
+    if mode == 0:
+        mode = 1
+    else:
+        mode = 0
+'''
