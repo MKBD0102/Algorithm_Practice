@@ -12,3 +12,12 @@ def solution(arr):
             stk.pop()
             
     return stk
+
+'''
+# for문 사용 ver.
+stk = []
+for i in range(len(arr)):
+    while stk and stk[-1] >= arr[i]:
+        stk.pop()
+    stk.append(arr[i])
+'''
