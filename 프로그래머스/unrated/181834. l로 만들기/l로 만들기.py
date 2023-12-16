@@ -4,3 +4,8 @@ def solution(myString):
             myString = myString.replace(s,'l')
             
     return myString
+
+'''
+# translate & maketrans 사용
+return myString.translate(str.maketrans('abcdefghijk', 'lllllllllll'))
+'''
