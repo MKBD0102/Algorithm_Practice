@@ -4,4 +4,6 @@ def solution(board, k):
         for j in range(len(board[i])):
             if i + j <= k:
                 res += board[i][j]
+            else:
+                break
     return res
