@@ -3,6 +3,6 @@ def solution(arr):
     if rows < cols:
         arr.extend([[0]*cols]*(cols-rows))
     elif rows > cols:
-        for i in range(rows):
-            arr[i].extend([0]*(rows-cols))
+        for row in arr:
+            row.extend([0]*(rows-cols))
     return arr
