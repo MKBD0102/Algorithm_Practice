@@ -1,7 +1,8 @@
 def solution(arr):
-    if len(arr) < len(arr[0]):
-        arr.extend([[0]*len(arr[0])]*(len(arr[0])-len(arr)))
-    elif len(arr) > len(arr[0]):
-        for i in range(len(arr)):
-            arr[i].extend([0]*(len(arr)-len(arr[i])))
+    rows, cols = len(arr), len(arr[0])
+    if rows < cols:
+        arr.extend([[0]*cols]*(cols-rows))
+    elif rows > cols:
+        for i in range(rows):
+            arr[i].extend([0]*(rows-cols))
     return arr
