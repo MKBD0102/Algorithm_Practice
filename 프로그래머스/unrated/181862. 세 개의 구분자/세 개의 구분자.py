@@ -1,3 +1,4 @@
 def solution(myStr):
     trans = str.maketrans('abc','   ')
-    return myStr.translate(trans).split() if myStr.translate(trans).split() else ["EMPTY"]
+    res = myStr.translate(trans).split()
+    return res if res else ["EMPTY"]
