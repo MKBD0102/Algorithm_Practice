@@ -1,3 +1,4 @@
+'''
 def solution(n, m):
     def gcd(a,b):
         for i in range(min(a,b),0,-1):
@@ -8,3 +9,11 @@ def solution(n, m):
             if i % a == 0 and i % b == 0:
                 return i
     return [gcd(n,m),lcm(n,m)]
+
+'''
+# 최소공배수 = 두 수 곱 * 최대공약수
+def solution(n, m):
+    a,b = max(n, m), min(n, m)
+    while b:
+        a,b = b,a%b
+    return [a,n*m//a]
