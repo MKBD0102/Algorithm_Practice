@@ -1,4 +1,3 @@
-'''
 def solution(n, m):
     def gcd(a,b):
         for i in range(min(a,b),0,-1):
@@ -14,6 +13,8 @@ def solution(n, m):
 # 최소공배수 = 두 수 곱 * 최대공약수
 def solution(n, m):
     a,b = max(n, m), min(n, m)
+    # 유클리드 호제법
     while b:
         a,b = b,a%b
     return [a,n*m//a]
+'''
