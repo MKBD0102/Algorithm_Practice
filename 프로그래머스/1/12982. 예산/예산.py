@@ -1,4 +1,3 @@
-''''
 def solution(d, budget):
     res = 0
     d = sorted(d)
@@ -23,3 +22,4 @@ def solution(d, budget):
         else:
             res += 1
     return res
+'''
