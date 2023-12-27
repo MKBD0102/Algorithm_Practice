@@ -12,3 +12,11 @@ def solution(s):
             res += s[i].lower()
             j += 1
     return res
+
+'''
+# split(): 모든 공백 제거 분리, split(' '): 공백 하나만 제거 분리
+# 리스트 컴프리헨션 사용
+return ' '.join([[c.upper() if i % 2 == 0 else c.lower() for i,c in enumerate(word)] for word in s.split(' ')])
+
+'''
+
