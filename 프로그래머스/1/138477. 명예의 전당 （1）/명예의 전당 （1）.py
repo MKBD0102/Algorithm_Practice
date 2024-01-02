@@ -10,3 +10,17 @@ def solution(k, score):
             ans.append(min(sorted_score[-k:]))
             i += 1
     return ans
+
+'''
+# 슬라이싱 사용 x
+def solution(k, score):
+    ans = []
+    x = []
+    for s in score:
+        x.append(s)
+        x.sort(reverse=True)
+        if len(x) > k:
+            del x [-1]
+        ans.append(min(x))
+    return ans
+'''
