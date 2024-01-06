@@ -1,3 +1,4 @@
+'''
 def solution(X, Y):
     X_cnt ={}
     Y_cnt ={}
@@ -19,3 +20,17 @@ def solution(X, Y):
             res = str(n) * min(X_cnt[str(n)], Y_cnt[str(n)]) + res
             
     return "-1" if not res else "0" if all(n == "0" for n in res) else res
+
+'''
+def solution(X, Y):
+    answer = ''
+
+    for i in range(9,-1,-1) :
+        answer += (str(i) * min(X.count(str(i)), Y.count(str(i))))
+
+    if answer == '' :
+        return '-1'
+    elif len(answer) == answer.count('0'):
+        return '0'
+    else :
+        return answer
