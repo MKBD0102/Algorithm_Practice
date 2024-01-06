@@ -1,4 +1,3 @@
-'''
 def solution(X, Y):
     X_cnt ={}
     Y_cnt ={}
@@ -22,6 +21,7 @@ def solution(X, Y):
     return "-1" if not res else "0" if all(n == "0" for n in res) else res
 
 '''
+# count 함수 사용
 def solution(X, Y):
     answer = ''
 
@@ -34,3 +34,4 @@ def solution(X, Y):
         return '0'
     else :
         return answer
+'''
