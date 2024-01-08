@@ -1,11 +1,11 @@
 def solution(keymap, targets):
     times = {}
     for key in keymap:
-        for s in key:
+        for i, s in enumerate(key):
             if s in times.keys():
-                times[s] = min(times[s],key.find(s) + 1)
+                times[s] = min(times[s], i + 1)
             else:
-                times[s] = key.find(s) + 1
+                times[s] = i + 1
     
     res = []
     for target in targets:
