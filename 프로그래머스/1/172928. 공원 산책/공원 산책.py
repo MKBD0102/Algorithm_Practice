@@ -1,4 +1,3 @@
-'''
 def solution(park, routes):
     
     for i, row in enumerate(park):
@@ -83,3 +82,4 @@ def solution(park, routes):
         y += dy[op]*n
                 
     return [x,y]
+'''
