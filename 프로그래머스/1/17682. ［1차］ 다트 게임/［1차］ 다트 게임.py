@@ -18,10 +18,8 @@ def solution(dartResult):
             num = num**3
         
         if option == "*":
-            try:
+            if i > 0:
                 scores[i-1] = scores[i-1]*2
-            except:
-                pass
             num *= 2
         elif option == "#":
             num = -num
