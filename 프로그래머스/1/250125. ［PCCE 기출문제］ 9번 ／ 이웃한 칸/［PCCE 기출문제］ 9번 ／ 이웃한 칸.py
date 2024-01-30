@@ -1,5 +1,3 @@
-from collections import deque
-
 def solution(board, h, w):
     n = len(board)
     count = 0
