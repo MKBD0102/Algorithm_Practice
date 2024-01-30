@@ -4,9 +4,6 @@ def solution(lottos, win_nums):
     prize = 0
     unknown = lottos.count(0)
     
-    while 0 in lottos:
-        lottos.remove(0)
-    
     if lottos:
         for num in lottos:
             if num in win_nums:
