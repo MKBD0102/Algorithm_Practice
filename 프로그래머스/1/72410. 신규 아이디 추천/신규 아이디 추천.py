@@ -4,8 +4,15 @@ def solution(new_id):
     for s in "~!@#$%^&*()=+[{]}:?,<>/":
         new_id = new_id.replace(s,'')
     
-    while '..' in new_id:
-        new_id = new_id.replace('..', '.')
+    check = new_id
+    new_id = ''
+    pre = None
+    for s in check:
+        if pre == '.' and s == '.':
+            continue
+        else:
+            new_id += s
+            pre = s
             
     new_id = new_id.strip('.')
     
