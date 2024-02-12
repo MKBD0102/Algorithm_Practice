@@ -9,3 +9,11 @@ def solution(n):
         fiv[i] = fiv[i-2]+fiv[i-1]
         
     return fiv[-1] % 1234567
+
+'''
+def solution(n):
+    a, b = 0, 1
+    for i in range(n):
+        a, b = b, a+b
+    return a % 1234567
+'''
