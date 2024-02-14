@@ -9,9 +9,3 @@ def solution(n, words):
             return [idx+1, cnt[idx]]
     
     return [0,0]
-        
-        
-        
-        
-
-    return answer
