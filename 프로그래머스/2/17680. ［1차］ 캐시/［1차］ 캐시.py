@@ -5,9 +5,8 @@ def solution(cacheSize, cities):
     if cacheSize == 0:
         return 5 * len(cities)
     
-    cities = [s.upper() for s in cities]
-    
     for city in cities:
+        city = city.upper()
         if city in cache:
             cache.remove(city)
             cache.append(city)
